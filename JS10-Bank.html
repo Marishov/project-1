@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("pin code")
+        let pin = 1234
+        let balance = 20000
+        for(i = 2; i >= 1; i--)
+ 
+        if(a === pin){
+            i = 0
+console.log(balance)
+let b = +prompt("Сколько вы хотите обналичить?")
+let sum = balance - b
+if(b>balance){
+    console.log("У вас недостаточно средств: "+sum)
+}else{
+    console.log(sum)
+    
+}
+
+
+        }else if(a !== pin){
+            console.log("Неправильный пин-код")
+             
+        console.log("У вас осталось "+ i +" попытки")
+        let a = +prompt("pin code")
+        if(i == 1){console.log("Card is blocked")
+        }
+    else if(a === pin){
+        i = 0
+console.log(balance)
+let b = +prompt("Сколько вы хотите обналичить?")
+let sum = balance - b
+if(b>balance){
+    console.log("У вас недостаточно средств: "+sum)
+}else{
+    console.log(sum)
+    
+}
+    }
+    }
+        
+          
+ 
+            
+        
+    </script>
+</body>
+</html>
+
+
+<!-- for(let i = 2; i <= 3; i){
+        //         console.log(i +" attempt(s) out of 3")
+        //     } 
+            
+        //   if(i = 3){
+        //         console.log(i+" attempt(s) out of 3. Card is blocked") -->

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+    }
+    .box {
+      width: 100%;
+      height: 210px;
+      background-color: blueviolet;
+  
+    }
+    .box__all{
+      display: flex;
+      justify-content: space-between;
+    }
+    .store {
+      position: absolute;
+      margin-top: 35px;
+      left: 33%;
+      color: white;
+      text-shadow:0 0 35px white;
+      font-weight: 900;
+      font-size: 4vh;
+    }
+    .box img {
+      position: absolute;
+      left: 17%;
+      top: -23px;
+      width: 15%;
+      height: 250px;
+     
+    }
+    .description{
+      margin-top: 90px;
+      width: 400px;
+      height: 100px;
+      font-family: 'Courier New', Courier, monospace;
+     font-size: 2.3vh;
+    }
+    @media screen and (max-width:1071px){
+      .box{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+      }
+      .description .store{
+        text-wrap: wrap;
+        flex-direction: column;
+      }
+
+    }
+    .circle{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-top: 15px;
+        position: absolute;
+        left: 70%;
+        background-color: white;
+        background-image: url(https://icones.pro/wp-content/uploads/2021/04/symbole-telephone-portable-violet.png);
+        background-size: 60%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        animation-name: phone;
+        animation-duration: 3.5s;
+        animation-iteration-count: infinite;
+        box-shadow: 0 0 5px whitesmoke;
+    }
+    @keyframes phone{
+        0%{
+transform: rotate(35deg);
+        }
+        25%{
+           transform: rotate(-35deg);
+        }
+    50%{
+        transform: rotate(35deg);
+    }
+    75%{
+        transform: rotate(-35deg);
+    }
+    100%{
+        transform: rotate(35deg);
+    }
+
+    }
+   
+    .poisk{
+      width: 60%;
+      height: 40px;
+      margin-left: 300px;
+      margin-top: 25px;
+      font-size: 20px;
+    }
+    .container{
+    width: 66%;
+    height: 400px;
+    background-color: rgb(204, 143, 228);
+   margin-left: 250px;
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+
+    }
+    .item{
+      width: 190px;
+      height: 350px;
+      background-color: rgba(255, 255, 255, 0.555);
+     
+    }
+    .item p{
+     position: absolute;
+     bottom: 110px;
+    margin-left: 50px;
+     font-size: 25px;
+    }
+   .item img{
+    width: 120%;
+    transform: translate(-8%);
+    height: 65%;
+   }
+   .samsung img{
+    width: 150%;
+    transform: translate(-16%);
+   }.xiaomi img{
+    transform: translate(-2%, 4%);
+    height: 60%;
+    width: 105%;
+   }
+   .huawei img{
+width: 90%;
+height: 50%;
+transform: translate(6%, 14%);
+   }
+   .honor img{
+    width: 100%;
+   height: 58%;
+   transform: translate(1%, 5%);
+   border-radius: 42%;
+   }
+   .box_img{
+    width:100%;
+    height: 650px;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/39QpAFRwJkaXhiBtH6zJgD.jpg);
+    background-repeat: no-repeat;
+    margin-left: 16.25%;
+    margin-top: 50px;
+    border-top-left-radius: 150px;
+ 
+   }
+   .container p{
+    color: rgb(85, 46, 97);
+   }
+
+.footer{
+  width: 100%;
+  background-color: blueviolet;
+  height: 100px;
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+  text-wrap: wrap;
+}
+.footer p{
+  margin-top: 20px;
+}
+
+
+
+
+.card {
+      width: 300px;
+      height: 500px;
+      border: 1px solid;
+      position: relative;
+      text-align: center;
+      flex-wrap: wrap;
+      border-radius: 15px;
+     
+     
+    }
+    .card img{
+      width: 100%;
+      height: 60%;
+      transition: 0.4s;
+      
+    }
+    .text{
+        position: absolute;
+        bottom: 80px;
+        color: #3d1039;
+       
+    }
+    .air{
+      left: 35%;
+      bottom: 100px;
+    }
+    .pw{
+      left: 22%;
+    }
+    .cena{
+      position: absolute;
+        background-color:#6c94c5;
+        color: aliceblue;
+        width: 80%;
+        height: 25px;
+        border-radius: 50px;
+        bottom: 60px;
+        text-align: center;
+        font-size: 22.5px;
+        left: 30px;
+    }
+    .buy{
+      border: 2px solid #6c94c5 ;
+      color: aliceblue;
+        font-size: 20px;
+        width: 50%;
+        height: 20px;
+       bottom: 20px;
+       left: 75px;
+       background-color: #DB577C;
+       padding-bottom: 5px;
+
+    }
+
+  .block{
+width: 60%;
+position: relative;
+left: 20%;
+   
+    display: flex;
+justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+.card:hover .cimg{
+ transform: scale(0.9); 
+}
+.ear{
+  transform: translate(0, 13%);
+}
+.mac{
+  width: 200px;
+  height:300px;
+}
+.mkey{
+  left: 10%;
+}
+.sw{
+  left: 18%;
+}
+  </style>
+  <body>
+    <div class="box">
+      <div class="box__all">
+      <img
+        src="https://niceillustrations.com/wp-content/uploads/2020/10/hand-holding-phone.png"
+        alt=""
+      />
+      <h1 class="store">Mobile Store</h1>
+      <p class="description store">Мобильные телефоны и аксессуары в Кыргызстане</p>
+      <div class="circle"></div>
+    </div>
+    </div>
+
+<!-- <input class="poisk" type="search" placeholder="Поиск...">
+<div class="container">
+  <div class="item"><img src="https://my-apple.com.ua/image/catalog/products/iphone/iphone-15-pro-15-pro-max/natural-titanium-1.png" alt=""><p>Apple</p></div>
+  <div class="item samsung"><img src="https://images.samsung.com/is/image/samsung/p6pim/levant/sm-a057flvgmea/gallery/levant-galaxy-a05s-sm-a057-sm-a057flvgmea-539420553?$650_519_PNG$" alt=""><p>Samsung</p></div>
+  <div class="item xiaomi"><img src="https://www.pakmobizone.pk/wp-content/uploads/2022/03/Xiaomi-12-Purple-1.png" alt=""><p>Xiaomi</p></div>
+  <div class="item huawei"><img src="https://ogo1.ru/upload/iblock/750/75075e4b1561b3fdf2b0bbd892d0b253.png" alt=""><p>Huawei</p></div>
+  <div class="item honor "><img src="https://mobix.ee/wp-content/uploads/2024/03/e05hcl6hu9.png" alt=""><p>Honor</p></div>
+</div>
+
+<div class="box_img"></div>
+
+<div class="block">
+  <div class="card">
+    <img class="cimg" src="https://img-prd-pim.poorvika.com/cdn-cgi/image/width=500,height=500,quality=75/product/Apple-iphone-15-pro-black-titanium-128gb-Back-Front-View.png" alt="">
+    <h2 class="text">Iphone 15 Pro Max/Black Premium</h2>
+    <div class="cena">95000 сом</div>
+    <div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+  <img class="cimg ear" src="https://d28y6u3vdjfi1e.cloudfront.net/wordpress-2nd-gen-black-woo/nav/info-2x.png" alt="">
+  <h2 class="text air">Air Pods</h2>
+  <div class="cena">15000 сом</div>
+  <div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_1d6fc688-0209-4ae3-beb8-1732bff17de0.png?v=1704271431" alt="">
+<h2 class="text air pw">Powerbank Ultra</h2>
+<div class="cena">5000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://image01.oneplus.net/ebp/201810/27/734/221eef5329f3e28756bbe610973366cd.png" alt="">
+<h2 class="text">Oneplus Type/Two Bullets Earphones</h2>
+<div class="cena">10000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw23ba2146/Charge2Speaker45Purp_dvHAMaster.png?sw=535&sh=535" alt="">
+<h2 class="text">JBL Charge 2/Portable wireless stereo speaker</h2>
+<div class="cena">25000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://www.dimprice.co.uk/image/cache/catalog/Samsung/samsung_a32_violet_7_png-1-800x800.png" alt="">
+<h2 class="text">Samsung Galaxy A32/Awesome violet</h2>
+<div class="cena">75000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/g502x-plus/gallery/g502x-plus-gallery-1-black.png?v=1" alt="">
+<h2 class="text">Gaming Mouse    /Wireless/Logitech G</h2>
+<div class="cena">5000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://freepngimg.com/save/58853-series-watch-apple-smartwatch-free-transparent-image-hd/1100x1390" alt="">
+<h2 class="text sw">Smartwatch Apple </h2>
+<div class="cena">15000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://www.thetvshop.in/assets/images/watch-3.png" alt="">
+<h2 class="text">Android tv/ LED 2088 Full 12k HDR</h2>
+<div class="cena">105000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://www.cygnett.com/cdn/shop/files/CY4369ACOCP-5_24c5cd21-777b-4c86-acbc-2ccaa66c999e_2376x.png?v=1706846344" alt="">
+<h2 class="text ">Wireless Fast Utra New Charger </h2>
+<div class="cena">10000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg mac" src="https://cdn.macstories.net/002/macbook-air-keyboard1540922520689.png" alt="">
+<h2 class="text">Macbook the Latest Collection</h2>
+<div class="cena">125000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+<div class="card">
+<img class="cimg" src="https://static.vecteezy.com/system/resources/previews/009/269/550/original/3d-gaming-keyboard-object-png.png" alt="">
+<h2 class="text mkey">     Mini Gaming Keyboard </h2>
+<div class="cena">5000 сом</div>
+<div class="cena buy">Купить</div>
+</div>
+
+
+</div>
+
+<div class="footer"><p>Интернет магазин Mobile Store.</p>
+<p>Всё лучшее - здесь.</p></div> -->
+  </body>
+</html>

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        font-size: 100px;
+    }
+</style>
+<body>
+    <div></div>
+    <script>
+// let a = "Hello DOM"
+// console.log(a.startsWith("HELLO"))//проверка начала строки тру/фолс hello/dom
+// console.log(a.endsWith("DOM"))// проверка конца строки
+// console.log(a.includes("apple"))// проверка на наличие ex:in search
+
+
+const text =prompt("Text?")
+const colors = ["red","green","blue"]
+const div = document.body.children[0]
+for(i=0;i<colors.length;i++)
+
+div.innerHTML = `<div<span style = color:${colors[i]}>${text}</span></div>`
+    </script>
+</body>
+</html>

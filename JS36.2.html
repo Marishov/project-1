@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+        margin-left: 40%;
+        margin-top: 15%;
+    }
+</style>
+<body>
+    <h1 id="num"></h1>
+
+    <script>
+
+let num = document.getElementById("num")
+let a = 15
+let b = 0
+setInterval (() => {
+ num.innerHTML = a
+ a-- // a -= 1
+ 
+ if(a < -1){
+    num.innerHTML = b
+    b++
+    if(b > 15){
+        a = 15
+        
+        
+    }
+ }
+},300)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    // let code = 777
+    // let a = +prompt("Введите код")
+    // console.log(a==code)
+   
+//let n = 5
+//console.log(n % 2)
+// при % выводит  остаток осталось делить Н:7/3 = 1 
+//5/2==2.5 == 0.5== 1
+// that is why 5 % 2 == 1
+
+let pr = +prompt("Сизде канча сом бар?")  //25
+let a = 0
+a = (pr - (pr % 10)) //25-5=20
+pr = pr - a   //25-20=5
+console.log("10 сом: " +a/10) //20:10=2
+
+b = (pr - (pr % 5)) //5 - 0 = 5
+pr = pr - b //5-5 = 0
+console.log("5 сом: "+b/5)  //5:5=1
+
+
+c = (pr - (pr % 3))
+pr = pr - c
+console.log("3 сом: "+c/3)
+
+
+d = (pr - (pr % 1))
+pr = pr - d
+console.log("1 сом: "+d/1)
+
+       
+    </script>
+</body>
+</html>

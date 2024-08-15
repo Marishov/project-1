@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div"></div>
+    <script>
+      // let body = document.body;
+      // body.onkeyup =(e) => {
+      //     if(e.key == "Enter"){    /// key = symbol, keyCode = numbers
+      //         console.log("yes")
+      //     }
+      // }
+
+      let body = document.body;
+      let text = "love world!";
+      let a = 0;
+
+      for (i = 0; i < text.length; i++) {
+        div.innerHTML += `<span id="col">${text[i]}</span>`;
+
+        body.onkeydown = (e) => {
+          if (e.keyCode === 8 && a > 0) {
+            col[a].style.color = "black";
+            a--;
+          } else {
+            if (col[a].innerHTML === e.key) {
+              col[a].style.color = "green";
+              a++;
+            } else {
+              col[a].style.color = "red";
+              a++;
+            }
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

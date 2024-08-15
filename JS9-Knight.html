@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Расположение коня по Х")//1
+        let b = +prompt("Расположение коня по Y")//1
+        let q = +prompt("Ход конем по X")//2 3
+        let r = +prompt("Ход конем по Y")//3 2
+        if ((((b+1 == q) || (b-1 == q))&&((a+2 == r) || (a-2 == r))) || (((b+2 == q) || (b-2 == q)) && ((a+1 == r) || (a-1 == r)))) {
+            console.log("Ход возможен")}
+        else{
+            console.log("Ход невозможен")
+        }
+       
+    </script>
+</body>
+</html>

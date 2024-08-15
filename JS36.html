@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: green;
+    }
+    h1{
+        margin-left: 40%;
+        margin-top: 15%;
+    }
+</style>
+<body>
+    <h1 id="hello">HELLO, DIGIPRO!</h1>
+    <script>
+
+
+
+let hello = document.getElementById("hello")
+// setInterval(() => {
+//     body.style.background = body.style.background == "red" ? "green" : "red"
+// }, 1000);
+
+
+// setTimeout(() => {
+//     body.style.background = "red"
+// },2000)
+
+// ? - if
+// : - else
+
+
+// setTimeout(() => {
+//   hello.innerHTML += `<h1>HELLO WORLD!</h1>`
+// },2000)
+
+
+ setTimeout(() => {
+    hello.style.color = "red"
+    setTimeout(() => {
+    hello.style.color = "blue"
+    setTimeout(() => {
+    hello.style.color = "yellow"
+    setTimeout(() => {
+    hello.style.color = "pink"
+}, 1000);
+}, 1000);
+}, 1000);
+}, 1000);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

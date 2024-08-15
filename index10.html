@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <style>
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 1s;
+    transform: translate(0%, 0%); 
+    /* #1left 2top */
+  }  
+  .block{
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+  }
+  .block:hover .box{
+    transform: translate(300px, 0px);
+  }
+ 
+</style>
+<body><div class="bloock">
+    <div class="block">
+        <div class="box"></div>
+    </div>
+
+    <div class="block">
+        <div class="box"></div>
+    </div>
+</div> -->
+
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+.block{
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    position: absolute;
+}
+.red1{
+    z-index: 5;
+}
+.red2{
+    background-color: rgb(194, 238, 0);
+    left: 50px;
+    position: absolute;
+    z-index: 1;
+}
+.red3{
+    background-color: green;
+    left: 50px;
+    position: absolute;
+    z-index: 2;
+}
+.red4{
+    background-color: rgb(13, 0, 128);
+    left: 50px;
+    position: absolute;
+    z-index: 3;
+}
+</style>
+</body>
+
+    <div class=" box red1"></div>
+    <div class="box red2"></div>
+    <div class="box red3"></div>
+    <div class="box red4"></div>
+</html>

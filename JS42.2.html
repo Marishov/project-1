@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+
+    <h1>password generator</h1>
+    <input id="inp" type="text">
+    <button id="btn">Generate</button>
+    <p id="output"></p>
+    <p id="div1"></p>
+
+    <script>
+const btn = document.getElementById("btn");
+const inp = document.getElementById("inp");
+const output = document.getElementById("output");
+let a = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890'
+
+btn.onclick = () =>  {    
+for(i=0;i<inp.value;i++){
+let num = Math.round(Math.random()* a.length)
+output.innerHTML += `<span>${a[num]}</span>`
+
+}
+}
+
+    </script>
+</body>
+</html>

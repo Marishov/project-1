@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="div1"></div>
+    <style>
+        span{
+            position: absolute;
+            left: 45%;
+            top: 35%;
+            font-size: 60px;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+
+    <script>
+// const unchangeable
+// let changeable
+
+let p = +prompt("pin-code")
+const pin = 1212
+let b = document.body
+if(p === pin){
+div1.innerHTML += `<span>Welcome</span>`
+b.style.background = "green"
+
+}else{
+    div1.innerHTML += `<span>Wrong...</span>`
+    b.style.background = "red"
+}
+
+
+    </script>
+</body>
+</html>

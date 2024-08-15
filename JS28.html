@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+         .sp{
+       
+       color: rgb(0, 0, 0);
+       
+   }
+   .circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 30px;
+   }
+   .box{
+       width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   
+   }
+    </style>
+
+<div class="box">
+
+    <div></div>
+    
+    </div>
+
+<script>
+let p = +prompt("number")
+let c = prompt("color")
+let div1 = document.body.children[1]
+
+for(i = 1; i <= p; i++){
+
+div1.innerHTML += `<div style = background:${c} class ="circle"><span class="sp">${i}</span></div>`
+
+}
+
+
+</script>
+</body>
+</html>

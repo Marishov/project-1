@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+       
+      let a = [
+        { question: "5 + 5", answer: "10" },
+        { question: "5 + 10", answer: "15" },
+        { question: "10 + 3", answer: "13" },
+      ]
+
+      let x = 0
+
+for(i = 0; i < a.length; i++){
+let p = prompt(a[i].question)
+if(p === a[i].answer){
+     x += 10
+}
+
+}
+console.log(x + " баллов")
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

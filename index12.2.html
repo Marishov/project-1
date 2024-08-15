@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      width: 400px;
+      height: 400px;
+      animation-name: box;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      position: absolute;
+      animation-timing-function: linear;
+      animation-delay: 0.3s;
+    }
+    @keyframes box {
+      0% {
+        left: 0;
+        top: 0;
+        background-color: brown;
+      }
+      15% {
+        left: 250px;
+        top: 50px;
+        
+      }
+      30% {
+        left: 400px;
+        top: 40px;
+        transform: rotate(1060deg);
+        background-color: aqua;
+      }
+      45% {
+        left: 570px;
+        top: 50px;
+       
+       
+      }
+      60% {
+        left: 830px;
+        top: 50px;
+       
+       
+      }
+      75% {
+        left: 630px;
+        top: 49px;
+      transform: rotate(1650deg);
+        background-color: rgb(245, 139, 0);
+      }
+      90% {
+        left: 350px;
+        top: 40px;
+      
+        background-color: saddlebrown;
+      }
+      100% {
+        left: 0px;
+        top: 0;
+       
+        background-color: cornflowerblue;
+      }
+
+    }
+    :hover.box{
+        position: absolute;
+       animation-play-state: paused;
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

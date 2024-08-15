@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 500px;
+    height: 500px;
+    border: 3px solid red;
+}
+.blue{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    z-index: 1;
+    position: absolute;
+    left: 230px;
+    top: 250px;
+}
+.circles{
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+.menu{
+    position: relative;
+     margin-top: -390px;
+    margin-left: 35%; 
+    width: 240px;
+    background-color: brown;
+    align-items: center;
+
+}
+#right{
+    float: right;
+    background-color: aqua;
+    margin-top: -20px;
+
+}
+#down{
+   position: absolute;
+   left: 80px;
+   margin-top: 60px;
+   background-color: violet;
+}
+#up{
+    position: absolute;
+ background-color: black;
+ margin-left: 80px;
+ margin-top: -100px;
+}
+#left{
+    float: left;
+    margin-top: -20px;
+}
+</style>
+<body>
+    <div class="box"></div>
+    <div class="blue" id="blue"></div>
+
+    <div class="menu">
+
+    <div class = "circles" id ="left">LEFT</div>
+<div class="circles" id ="right">RIGHT</div>
+<div class="circles" id ="up">UP</div>
+<div class="circles" id ="down">DOWN</div>
+
+</div>
+    <script>
+
+
+function s() {
+      n.style.top = z
+      x = 0
+    }
+
+    function r(){
+  x += 30
+    n.style.left = x + "px"
+    
+    if(n.style.left > 500 + "px"){
+       s()
+
+   }
+    }
+   
+
+         let n = document.getElementById("blue")
+let z = 0
+let x = 0
+z = 250
+x = 230
+setInterval(() => {
+    up.onclick = () => {
+        z += -30 
+        n.style.top = z + "px"
+    }
+
+
+    down.onclick = () =>  {
+        z += 30
+        n.style.top = z + "px"
+    
+    }
+    left.onclick = () => {
+        x += -30
+        n.style.left = x + "px"
+    
+    }
+}, 5000000)
+// right.onclick = () => {
+//     setInterval(r,100)
+
+// }
+
+
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // object
+
+      // let arr = [
+      // {name: "asan", age: "20", gender: "man"},
+      // {name: "baitur", age: "17", gender: "man"},
+      // {name: "aijan", age: "20", gender: "woman"},
+      // ]
+
+      // for(let i = 0; i < arr.length; i++){
+      //     console.log(arr[i].name, arr[i].age, arr[i].gender)
+      // }
+
+      // let a = [
+      //     {pin:1001, summa:5000},
+      //     {pin:1002, summa:15000},
+      //     {pin:1003, summa:275000},
+      //     {pin:1004, summa:500000},
+      // ]
+
+      // let p = prompt("pin code")
+      // for(let i = 0; i < a.length; i++)
+      // if(p == a[i].pin){
+      //     console.log(a[i].summa)
+
+      // }
+
+      let clients = [
+        { name: "asan", age: 25 },
+        { name: "uson", age: 45 },
+        { name: "jandos", age: 18 },
+        { name: "adilet", age: 35 },
+      ];
+
+      let products = [
+        { name: "notebook", price: 60000, discount: 5 },
+        { name: "book", price: 30000, discount: 10 },
+        { name: "phone", price: 6000, discount: 1 },
+        { name: "pots", price: 500, discount: 10 },
+      ];
+
+      let orders = [
+        { client: "asan", product: "notebook", quantity: 1 },
+        { client: "uson", product: "book", quantity: 2 },
+        { client: "jandos", product: "phone", quantity: 6 },
+        { client: "adilet", product: "book", quantity: 1 },
+        { client: "jandos", product: "book", quantity: 4 },
+        { client: "asan", product: "pots", quantity: 9 },
+      ];
+
+      // let q = 0
+      // let k = 0
+      // let p = orders[q].quantity * k
+
+      for (let i = 0; i < clients.length; i++) {
+        let balans = 0;
+        for (let i2 = 0; i2 < orders.length; i2++) {
+          if (orders[i2].client == clients[i].name) {
+            for (let i3 = 0; i3 < products.length; i3++) {
+              if (orders[i2].product === products[i3].name) {
+                balans += products[i3].price * orders[i2].quantity;
+                if (clients[i].age > 18) {
+                  balans = balans - (balans * products[i3].discount) / 100;
+                }
+              }
+            }
+          }
+        }
+        console.log(clients[i].name, balans);
+      }
+    </script>
+  </body>
+</html>

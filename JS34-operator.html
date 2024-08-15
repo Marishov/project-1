@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+img{
+    width: 105px;
+    height: 85px;
+}
+
+
+</style>
+<body>
+   <div id="div1"></div>
+
+    <input type="text" placeholder="text" id="input">
+
+    <button id="button">Add</button>
+    <ul id="ul"></ul>
+    <script>
+
+let input = document.getElementById("input")
+let button = document.getElementById("button")
+let  ul = document.getElementById("ul")
+let h1 = document.getElementById("h1")
+let n = 0
+div1.innerHTML = `<h1>To do List ${n}</h1>`
+
+
+
+    button.onclick = function add(){
+        let a = input.value[0] + input.value[1] +  input.value[2] 
+        n = n + 1
+    div1.innerHTML = `<h1>To do List ${n}</h1>`
+    input.value = ""   
+        if(a >= 770 && a <= 779 || a >= 220 &&  a <= 229){
+    ul.innerHTML += `<li>${n}. <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/BeeLine_logo.png/220px-BeeLine_logo.png"></img></li>`
+}
+else if(a >= 550 && a <= 559 || a >= 990 &&  a <= 999) {
+ ul.innerHTML += `<li>${n}. <img src="https://www.megacom.kg/uploads/ckeditor/pictures/3631/content_ru_MEGA-New-1200x900.png"></img></li>`}
+
+ else if(a >= 500 && a <= 509 || a >= 700 &&  a <= 709) {
+    ul.innerHTML += `<li>${n}. <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%9E%21_%D0%9D%D0%A3%D0%A0_%D0%A2%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC.png"></img></li>`}
+else{
+    ul.innerHTML += `<li>${n}. <img src="https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg"></img></li>`
+}
+}   
+
+    </script>
+</body>
+</html>

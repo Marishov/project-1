@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // `${}` буква Ё для `` 
+        // for(let i = 1; i < 10; i++){
+        //     console.log(`6 * ${i} = ${i * 6} число таблица умножение ${i}`)
+        // }
+
+
+        //Палиндром ДЗ yes no both english russian use not ams but index and 2 for to straight and backwards
+
+
+
+        let a = prompt("Ваше слово?")
+        let b = ""
+
+        for(let i = 1; i < a.length; i++){
+            for(let c = a.length; c >= 0; --c){
+
+                if(a[i] == a[c]){
+                    b= "Polindrom"
+                }
+                    
+                else{
+                    b= "no Polindrom"
+                    
+                }
+            }
+
+        }
+         console.log(b) 
+
+
+
+    </script>
+</body>
+</html>
+
+

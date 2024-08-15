@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.h1{
+    position: absolute;
+    left: 35%;
+    font-size: 55px;
+}
+#box{
+    position: relative;
+    top: 650px;
+    left: 25%;
+width: 800px;
+height: 110px;
+display: flex;
+justify-content: space-around;
+
+}
+.circle{
+    position: relative;
+   z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: black;
+}
+#tesla{
+    position: relative;
+    left: 10%;
+    width: 1200px;
+    height: 500px;
+    
+}
+
+</style>
+<body>
+    <h1 class="h1">Choose your dream</h1>
+    <div id="box">
+    <div class="circle" id="white"><img  src="./photos_circle/white.jpg" alt=""></div>
+    <div class="circle" id="grey"><img  src="./photos_circle/grey.jpg" alt=""></div>
+    <div class="circle" id="black"><img  src="./photos_circle/black.jpg" alt=""></div>
+    <div class="circle" id="blue"><img  src="./photos_circle/blue.jpg" alt=""></div>
+    <div class="circle" id="red"><img  src="./photos_circle/red.jpg" alt=""></div>
+</div>
+<img id="tesla" src="./photos_circle/white-car.jpg" alt="" >
+    <script>
+
+white.onclick = () => {
+
+tesla.src = "./photos_circle/white-car.jpg" 
+
+}
+grey.onclick = () =>  {
+    tesla.src = "./photos_circle/grey-car.jpg"
+    
+}
+red.onclick = () => {
+    tesla.src = "./photos_circle/red-car.jpg"
+}
+blue.onclick = () => {
+    tesla.src = "./photos_circle/blue-car.jpg"
+}
+black.onclick = () => {
+    tesla.src = "./photos_circle/black-car.jpg"
+}
+    </script>
+
+</body>
+</html>

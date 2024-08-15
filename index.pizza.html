@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      width: 500px;
+      height: 430px;
+      border-radius: 10px;
+      background-color: rgb(182, 180, 180);
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      
+    }
+    .pizza {
+      position: absolute;
+      background-image: url(https://static.vecteezy.com/system/resources/previews/028/882/843/non_2x/pizza-pizza-transparent-pizza-ai-generated-free-png.png);
+      background-size: cover;
+      background-position: center;
+      transform: translate(-50%);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: 0.3s;
+    }
+    .pizza:hover {
+      transform: translate(-10%);
+    }
+
+    .text {
+      position: absolute;
+      right: 0;
+      width: 60%;
+      top: 50%;
+      transform: translate(0, -50%);
+      margin: 10px;
+    }
+    button {
+      width: 50%;
+      height: 40px;
+      border-radius: 15px;
+      background-color: blueviolet;
+      border: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .cena{
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="pizza"></div>
+      <div class="text">
+        <h1>Пицца из половинок</h1>
+        <p>
+          Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+          eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit ullam
+          fugiat corporis, consectetur dolores nesciunt?
+        </p>
+        <h2 class="cena">От 20 сом</h2>
+        <button>Заказать</button>
+      </div>
+    </div>
+  </body>
+</html>

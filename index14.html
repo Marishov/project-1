@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    .black {
+      width: 100%;
+      height: 700px;
+      background-color: black;
+      color: white;
+    }
+
+    .dih {
+      position: absolute;
+      left: 35%;
+      top: 200px;
+    }
+    @keyframes div1 {
+      0% {
+        left: 35%;
+        top: 200px;
+        width: 500px;
+      }
+      50% {
+        width: 250px;
+      }
+      100% {
+        left: 100%;
+        top: 200px;
+        width: 0;
+      }
+    }
+    .digi {
+      font-size: 50px;
+    }
+
+    .pizza img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 580px;
+      left: 40%;
+      animation-name: pizza;
+      animation-duration: 55s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes pizza {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(1960deg);
+      }
+    }
+    .dih2 {
+      position: absolute;
+      left: 22.5%;
+      top: 275px;
+    }
+    .dostavka {
+      font-size: 30px;
+    }
+
+    .div1 {
+      animation-name: div1;
+      animation-duration: 5s;
+      animation-delay: 0.5s;
+      animation-timing-function: linear;
+      width: 0;
+      height: 90px;
+      background-color: black;
+    }
+    .div2 {
+      animation-name: div2;
+      width: 0;
+      animation-duration: 5s;
+      height: 0;
+    }
+    @keyframes div2 {
+      from {
+        left: 22.5%;
+        top: 275px;
+        height: 90px;
+        width: 1000px;
+      }
+      to {
+        left: 22.5%;
+        top: 375px;
+        height: 0;
+        width: 1000px;
+      }
+    }
+
+    .box {
+      width: 500px;
+      height: 430px;
+      border-radius: 10px;
+      background-color: rgb(182, 180, 180);
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      margin-top: 50px;
+    }
+    .pizza2 {
+      position: absolute;
+      background-image: url(https://static.vecteezy.com/system/resources/previews/028/882/843/non_2x/pizza-pizza-transparent-pizza-ai-generated-free-png.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 400px;
+      background-position: center;
+      transform: translate(-50%);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: 0.3s;
+    }
+    .pizza2:hover {
+      transform: translate(0);
+    }
+
+    .text {
+      display: grid;
+      row-gap: 20px;
+      position: absolute;
+      right: 0;
+      width: 60%;
+      top: 50%;
+      transform: translate(0, -50%);
+      margin: 10px;
+    }
+    button {
+      width: 50%;
+      height: 40px;
+      border-radius: 15px;
+      background-color: blueviolet;
+      border: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .cena {
+      color: blueviolet;
+    }
+
+    .red {
+      width: 50px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: blue;
+      text-align: center;
+      position: absolute;
+
+      color: white;
+    }
+    .container{
+      margin-top: 5pc;
+      width: 85%;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+      justify-content: space-between;
+flex-wrap: wrap;
+    }
+    .pizza2::after{
+      content:"2/1";
+      position: absolute;
+      top: 45px;
+      left: 350px;
+      border-radius: 55px;
+      text-align: center;
+      font-size: 30px;
+      width: 80px;
+      height: 40px;
+      background-color: blueviolet;
+      color: white;
+      box-shadow: 3px 3px 25px white;
+    }
+    .kyrgyz{
+      background-image: url(https://pngfre.com/wp-content/uploads/pizza-png-from-pngfre-10.png) ;
+     background-size: 298px;
+    }
+    .kyrgyz::after{
+      content: "New";
+      /* display: none; если нет афтера */
+      background-color: red;
+    }
+  </style>
+  <body>
+    <div class="black">
+      <h1 class="dih digi">DigiPro Food</h1>
+      <div class="dih div1"></div>
+
+      <div class="dih2 dostavka"><h2>Доставка еды: роллы, суши, пицца</h2></div>
+      <div class="dih2 div1 div2"></div>
+    </div>
+    <div class="pizza">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/024/589/160/small/top-view-pizza-with-ai-generated-free-png.png"
+        alt=""
+      />
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 300 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="box">
+        <div class="pizza2 kyrgyz"></div>
+        <div class="text">
+          <h1>Кыргызская Пицца</h1>
+          <p>
+            Соберите свою любимую пиццу из чистого мяса. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 390 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 20 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 20 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+
+
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 20 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 20 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 20 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+
+
+
+      <div class="box">
+        <div class="pizza2"></div>
+        <div class="text">
+          <h1>Пицца из половинок</h1>
+          <p>
+            Соберите свою любимую пиццу Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias labore sint aliquid numquam facere fugit cum
+            eaque culpa voluptatum! Aut aperiam eveniet saepe reprehenderit
+            ullam fugiat corporis, consectetur dolores nesciunt?
+          </p>
+          <h2 class="cena">От 20 сом</h2>
+          <button>Заказать</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

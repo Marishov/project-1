@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    background-color: gray;
+    width: 250px;
+    height: 200px;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+}
+.search{
+   
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+}
+.input{
+    height: 30px;
+}
+.list{
+    background-color: black;
+    width: 150px;
+    color: white;
+   position: absolute;
+   left: 25%;
+   top: 30px;
+}
+.div{
+    margin-left: 30%;
+}
+</style>
+<body>
+    <div class="box"><p>Kiwi</p>
+    <div class="input"><input id="input" type="text" placeholder="Type here..."></div>
+    <button class="search" id="search">search</button>
+    </div>
+    <div class="list">List of items: cacao, coffee, watermelon, deer, Kyrgyzstan</div>
+    <div id="div">Answer:</div>
+    <script>
+        
+        // 1onclick, function, for, 2 if
+
+let input = document.getElementById("input")
+let search = document.getElementById("search")
+let div =  document.getElementById("div")
+
+let mass = [
+  {  
+    name:"cacao",
+    info:"Кака́о, или шокола́дное де́рево, или какао настоящее (лат. Theobrōma cacāo) — вид вечнозелёных деревьев из рода Теоброма",
+}, 
+{
+    name:"coffee",
+    info:"Ко́фе (от араб.[qahwa/gahfa], через нидерл. koffie, англ. coffee и устар. ко́фий, ко́фей) — напиток из жареных и перемолотых зёрен кофейного дерева",
+}, 
+{
+    name:"watermelon",
+    info:"Арбу́з обыкнове́нный (лат. Citrúllus lanátus), или арбу́з шерсти́стый, или арбу́з столо́вый — однолетнее травянистое растение, вид рода Арбуз",
+}, 
+{
+    name:"deer",
+    info:"Олени имеют богатое символическое значение и являются в мифах различных культур и народов. Часто олицетворяют благородство, величие, красоту, грацию, быстроту.-",
+},
+    {
+    name:"Kyrgyzstan",
+    info:"Кыргызста́н, официально — Кыргы́зская Респу́блика, — государство в Центральной Азии, расположенное в западной и центральной части горной системы Тянь-Шань и на Памиро-Алае.",
+},
+]
+ 
+
+
+search.onclick  = () =>  {
+
+        for(i = 0; i < mass.length; i++){
+            if(input.value == mass[i].name){
+                div.innerHTML = `<h3>${mass[i].info}</h3>`
+                break;
+            }
+            if(!false){
+                console.log("error")
+            }
+        }
+
+        input.value = ""
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    position: relative;
+    left: 100px;
+}
+
+.back{
+    position: relative;
+    top: -40px;
+    left: 500px;
+    width: 400px;
+    background-color: greenyellow;
+ font-weight: 500;
+
+}
+#clear{
+    background-color: brown;
+}
+#button{
+    background-color: green;
+}
+</style>
+<body>
+    <div class="box">
+
+    <div id="div1"></div>
+
+    <input type="text" placeholder="text" id="input">
+    <button id="clear">Clear</button>
+    <button id="button">Add</button>
+   
+
+</div class="ul">
+<div class="back">
+    <h1></h1>
+ <ul id="ul"></ul>
+</div>
+    <script>
+let input = document.getElementById("input")
+let button = document.getElementById("button")
+let  ul = document.getElementById("ul")
+let h1 = document.getElementById("h1")
+let n = 0
+div1.innerHTML = `<h1>To do List ${n}</h1>`
+button.onclick = function add(){
+    n = n + 1
+    div1.innerHTML = `<h1>To do List ${n}</h1>`
+    ul.innerHTML += `<li>${n}. ${input.value}</li>`
+   input.value = ""
+        
+}  
+clear.onclick = function add(){
+    n = 0
+    div1.innerHTML = `<h1>To do List ${n}</h1>`
+    ul.innerHTML = 
+   input.value = ""
+        
+}  
+
+    </script>
+</body>
+</html>

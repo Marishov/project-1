@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let most = +prompt("Сколько мостов?")
+        let sm = 400
+        let x = 0
+        
+        for(i = 1; i<=most; i++){
+           let b =  +prompt("Мост №"+i)
+            if(sm > b && x === 0){
+                x = i
+            }
+        }
+        if(x){
+            console.log("Crash " + x)
+        }else{
+            console.log("No crash")
+        }
+
+    </script>
+</body>
+</html>

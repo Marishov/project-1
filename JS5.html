@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pr = +prompt("Введите секунды") 
+
+        let h = 0
+        let m = 0
+        let s = 0
+        h = pr - ( pr % 3600)        
+        pr = pr - h
+        
+        m = pr-(pr%60)         
+        pr = pr - m
+
+        s = pr-(pr%1)
+        pr = pr - s
+        
+
+        console.log("hour: "+h/3600+"     min: "+m/60+"    sec: "+ s)
+
+        
+    </script>
+</body>
+</html>

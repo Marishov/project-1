@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+        border: 3px solid;
+    }
+    #div2{
+        background-color: green;
+    }
+    #div3{
+        background-color: brown;
+    }
+
+</style>
+<body>
+    <div id="box">
+
+<div id="div1"></div>
+<div id="div2"><h1>ADD++</h1></div>
+<div id="div3"><h1>ADD--</h1></div>
+
+    </div>
+    <script>
+let div1 = document.getElementById("div1")
+let div2 = document.getElementById("div2")
+let div3 = document.getElementById("div3")
+
+let n = 0
+
+div2.onclick = function add(){
+    n = n + 1
+    div1.innerHTML = `<h1>${n}</h1>`
+        
+}   
+div3.onclick = function add(){
+    n = n - 1
+    div1.innerHTML = `<h1>${n}</h1>`
+        
+}  
+    </script>
+</body>
+</html>

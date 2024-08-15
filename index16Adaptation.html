@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.block{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    width: 400px;
+    height: 30px;
+    background-color: blue;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+.a{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+@media screen and (max-width:700px){
+    .block{
+        flex-wrap: wrap;
+        flex-direction: column;
+           }
+           .a{
+            background-color: green;
+           }
+}
+
+    @media screen and (max-width:400px){
+    .a{
+        background-color: black;
+    }
+}
+</style>
+<body>
+    <div class="block">
+<div class="box">Hello</div>
+<div class="box">Hello</div>
+<div class="box">Hello</div>
+<div class="a"></div>
+
+    </div>
+</body>
+</html>

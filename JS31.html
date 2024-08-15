@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: aqua;
+    }
+    h1 {
+      font-size: 300px;
+    }
+  </style>
+  <body>
+    <h1></h1>
+    <script>
+      let a = prompt("name");
+      let b = prompt("color");
+      let colors = ["red", "blue", "orange", "yellow"];
+      if (colors.includes(b)) {
+        let h1 = document.body.children[0];
+        h1.innerHTML = `<h1 style = color:${b}> ${a} </h1>`;
+      } else {
+        alert("there is no such color...");
+      }
+    </script>
+  </body>
+</html>

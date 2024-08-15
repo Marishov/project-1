@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    margin-left: 30%;
+    width: 500px;
+    height: 500px;
+    border: 3px solid red;
+    position: relative;
+    overflow: hidden;
+}
+#n{
+ 
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    
+}
+
+</style>
+
+<body>
+
+    <div class="box">
+
+        <div id="n"></div>
+    </div>
+
+    <script>
+
+let body = document.body
+
+
+ 
+let left1 = 0
+let top1 = 0
+let current = 0
+
+
+
+
+body.onkeydown = (e) => {
+    current = e.keyCode
+}
+setInterval(() => {
+
+    if(current == 39){
+        left1 += 10
+            n.style.left = left1 + "px"
+    }
+
+    if(current == 37){
+        left1 -= 10
+            n.style.left = left1 + "px"
+    }
+
+    if(current == 40){ 
+        top1 += 10
+            n.style.top = top1 + "px"
+    }
+
+    if(current == 38){
+        top1 -= 10
+            n.style.top = top1 + "px"
+   }
+    
+   if(left1 == 500){
+    left1 = 0
+}else if(top1 == 500){
+top1 = 0
+}else if(left1 == 0){
+    left1 = 500
+}else if(top1 == 0){
+    top1 = 500
+}
+
+},30)
+
+
+
+
+
+   
+
+
+
+
+</script>
+</body>
+</html>

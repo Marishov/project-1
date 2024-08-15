@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 300px;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+.light{
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+h1{
+    font-size: 100px;
+    z-index: 1;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+    border: 2px solid red;
+}
+.green{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid green;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-around;
+}
+#red2{
+    background-color: black;
+}
+#green2{
+    background-color: green;
+}
+
+</style>
+<body>
+    <div class="boxes">
+    <div class="box">
+<div class="light red" id="red"></div>
+<div class="light yellow" id="yellow"><h1 id="yellow__num">15</h1></div>
+<div class="light green" id="green"></div>
+
+
+    </div>
+
+
+    <div class="box box2">
+        <div class="light red" id="red2"></div>
+        <div class="light yellow" id="yellow2"><h1 id="yellow__num2"></h1></div>
+        <div class="light green" id="green2"></div>
+        
+        
+            </div>
+
+        </div>
+
+    <script>
+let red = document.getElementById("red")
+let yellow = document.getElementById("yellow")
+let green = document.getElementById("green")
+
+
+let red2 = document.getElementById("red2")
+let yellow2 = document.getElementById("yellow2")
+let green2 = document.getElementById("green2")
+
+
+
+
+   
+    function col() {
+        red.style.backgroundColor =  red.style.backgroundColor == "black" ? "red" : "black"
+        green.style.backgroundColor =  green.style.backgroundColor == "green" ? "black" : "green"
+    }
+
+    function e() {
+        yellow.style.background = "yellow"
+        yellow.style.color = "black"
+    }
+
+    let a = 15
+
+
+
+
+    function svet(){
+        
+        e()
+        a--
+        yellow__num.innerText = a
+
+        if(a == 0){
+            a = 15
+            yellow__num.innerText = a
+            col()
+        }else if(a < 5 ){
+            yellow.style.background = "black"
+             yellow.style.color = "yellow"
+        }
+        setTimeout(e, 250)
+    }
+    setInterval(svet,500)
+
+
+
+    function col2() {
+        red2.style.backgroundColor =  red2.style.backgroundColor == "black" ? "red" : "black"
+        green2.style.backgroundColor =  green2.style.backgroundColor == "green" ? "black" : "green"
+    }
+
+    function e2() {
+        yellow2.style.background = "yellow"
+        yellow2.style.color = "black"
+    }
+let b = 15
+
+    function svet(){
+        
+        e2()
+        b--
+        yellow__num2.innerText = b
+
+        if(b == 0){
+            b = 15
+            yellow__num2.innerText = b
+            col2()
+        }else if(b < 5 ){
+            yellow2.style.background = "black"
+             yellow2.style.color = "yellow"
+        }
+        setTimeout(e2, 250)
+    }
+    setInterval(svet2,500)
+
+
+
+// function col() {
+//         red2.style.backgroundColor =  red2.style.backgroundColor == "red" ? "black" : "red"
+//         green2.style.backgroundColor =  green2.style.backgroundColor == "black" ? "green" : "black"
+//     }
+//     function local(){
+//         yellow2.style.backgroundColor = "black" ;
+       
+//     }
+// let c = 15
+
+// setInterval (() => {
+    
+//      local()
+//     yellow__num2.innerHTML = c
+//     c--  
+
+
+//     if(c < 0){
+//         c = 15
+//         col()
+//     }
+//  setInterval(local, 800)
+// },800)
+    </script>
+</body>
+</html>

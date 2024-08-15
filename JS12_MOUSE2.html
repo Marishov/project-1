@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dom1 = +prompt("Дом 1");
+      let dom2 = +prompt("Дом 2");
+      let dom3 = +prompt("Дом 3");
+
+      
+      a = 15;
+      b = 10;
+
+//dom1-2
+
+      if (dom1 >= a && dom2 >= a) {
+        dom1 -= a
+      } else if (dom1 <= dom2) {
+        dom1 = 0;
+
+      } else{
+        dom1 -= dom2;
+        }
+//dom2-3
+
+        if (dom2 >= b && dom3 >= b) {
+        dom2 -= b   
+      } else if (dom2 <= dom3) {
+        dom2 = 0;
+
+      } else {
+        dom2 -= dom3;
+      }
+      
+      
+      
+      console.log(dom1+dom2+dom3)
+    </script>
+  </body>
+</html>

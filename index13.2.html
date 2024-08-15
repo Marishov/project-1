@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <style>
+    .box {
+      width: 70%;
+      height: 700px;
+      position: relative;
+      left: 15%;
+      border: 1px gray solid;
+      display: flex;
+    }
+    .nav {
+      width: 100%;
+      height: 100px;
+      background-color: rgb(19, 44, 44);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(240, 248, 255, 0.788);
+    }
+    .icons {
+      display: flex;
+      width: 45%;
+      justify-content: space-between;
+      padding-right: 15px;
+    }
+    .icon {
+      width: 60px;
+      height: 30px;
+    }
+    span {
+    }
+    h1 {
+      padding-left: 15px;
+      height: 50px;
+    }
+    .main {
+      position: absolute;
+      width: 40%;
+      height: 584px;
+      border: 1px gray solid;
+      left: 30%;
+      top: 16.5%;
+      overflow: hidden;
+    }
+    .img1 {
+      width: 100%;
+      height: 300px;
+    }
+    .discount {
+      width: 220px;
+      height: 50px;
+      transform: rotate(-30deg);
+      position: absolute;
+      background-color: rgba(17, 99, 72, 0.753);
+      z-index: 1;
+      top: 0;
+      left: -45px;
+      color: black;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .love {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .text {
+      padding-left: 10px;
+    }
+    .trt {
+      color: brown;
+      position: absolute;
+      left: 90px;
+      bottom: 117px;
+    }
+    .add {
+      position: absolute;
+      left: 1%;
+      border-radius: 50px;
+      width: 98%;
+      height: 75px;
+      background-color: rgba(17, 99, 72, 0.753);
+    }
+    .pi {
+      position: absolute;
+      left: 33.5%;
+      top: 9px;
+      color: rgb(233, 241, 248);
+    }
+    .pi2{
+        position: absolute;
+      left: 67%;
+      top: 23px;
+    
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="nav">
+        <h1>Global Market</h1>
+        <div class="icons">
+          <span class="material-symbols-outlined"> home </span>
+          <div class="icon">Главная</div>
+          <span class="material-symbols-outlined"> favorite </span>
+          <div class="icon">Избранное</div>
+          <span class="material-symbols-outlined"> attach_money </span>
+          <div class="icon">Скидки</div>
+          <span class="material-symbols-outlined"> shopping_cart </span>
+          <div class="icon">Корзина</div>
+        </div>
+      </div>
+
+      <div class="main">
+        <img
+          class="img1"
+          src="https://domcar.com.cy/upload/resize_cache/iblock/078/854_534_2/078c5cf58b7ad06ea6b2469770e3e72e.jpg"
+          alt=""
+        />
+        <div class="discount"><h2>Акция</h2></div>
+        <div class="love">
+          <span class="material-symbols-outlined"> bookmark_heart </span>
+        </div>
+        <div class="text">
+          <p>
+            Комплектация: Полня Пневмоподвеска, подстаканники с подогревом и
+            охлаждением, акустика Burmester, все возможные помощники при
+            вождении, камеры 360, адаптивный круиз, массаж, подогрев, обдув
+            сидений, панорамный люк, подсветка салона, задний климат, проекция
+            на лобовое, и тд
+          </p>
+          <h3>111.000$</h3>
+        </div>
+        <strike class="trt">130.000$</strike>
+        <div class="add"><p class="pi">Добавить в корзину</p>
+            <span class="material-symbols-outlined pi pi2"> add </span>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="name" id="inp1">
+    <button id="save">save</button>
+    <button id="load">load</button>
+    <input type="text" placeholder="load" id="inp2">
+    <script>
+
+save.onclick = () => {
+    localStorage.setItem("name",inp1.value)
+    inp1.value = ""
+}
+load.onclick = () => {
+   let local = localStorage.getItem("name")
+    inp2.value = local
+}
+
+    </script>
+</body>
+</html>

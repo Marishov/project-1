@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- <div>Hello DOM</div>
+<h1 class="h1">Jandos</h1>
+<div id="img">hello</div> -->
+<style>
+    .sp{
+       
+        color: rgb(255, 255, 255);
+        
+    }
+    .circle{
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         background-color: rgb(0, 0, 0);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        font-size: 30px;
+    }
+    .box{
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+</style>
+
+
+<div class="box">
+
+<div></div>
+
+</div>
+
+<script>
+
+// let div1 = document.body.children[0]
+// let h1 = document.querySelector("h1")
+// let image = document.getElementById("img")
+
+// div1.style.color = "red"
+// h1.style.fontSize = "10px"
+// image.style.color = "green"
+
+// let div1 = document.body.children[0]
+// div1.innerText += p
+// div1.innerHTML += `p`
+
+// let p = prompt("Your word")
+
+// let div1 = document.body.children[0]
+
+// div1.innerText += p
+
+
+
+let p = +prompt("number")
+
+let div1 = document.body.children[1]
+for(i = 1; i <= p; i++){
+div1.innerHTML += `<div class ="circle"><span class="sp">${i}</span></div>`
+
+}
+</script>
+</body>
+</html>

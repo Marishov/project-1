@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+        .box{
+            width: 600px;
+            height: 600px;
+            position: relative;
+            left: 30%;
+            top: 10%;
+            border: 3px solid red;
+        }
+    .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: red;
+        position: absolute;
+        animation-name: circle;
+        animation-duration: 1.25s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    @keyframes circle{
+        0%{
+         left: 0;
+         top: 0;
+        }
+        15%{
+            left: 15px;
+            top: 500px;
+        }
+        30%{
+            left: 30px;
+            top: 354px;
+        }
+        45%{
+            left: 65px;
+            top: 367px;
+        }
+        60%{
+            left:95px;
+            top: 500px;
+        }
+    75%{
+        left: 113px;
+            top: 438px;
+        }
+        90%{
+            left: 140px;
+            top: 450px;
+        }
+        95%{
+            left: 155px;
+            top: 500px;
+        }
+    100%{
+        left: 155px;
+            top: 500px;
+        }
+    }
+    
+  </style>
+  <body>
+    <div class="box">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

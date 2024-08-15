@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="black"><input id="black" type="checkbox">black</div>
+    <div class="red"><input id="red" type="checkbox">red</div>
+    <div class="blue"><input id="blue" type="checkbox">blue</div>
+    <script>
+
+        let black = document.getElementById("black")
+        let blue = document.getElementById("blue")
+        let red = document.getElementById("red")
+
+        black.onclick  = () =>  {
+            if(black = black){
+            document.body.style.backgroundColor = "black"
+            }
+        }
+        blue.onclick  = () =>  {
+document.body.style.backgroundColor = "blue"
+
+        }
+        red.onclick  = () =>  {
+document.body.style.backgroundColor = "red"
+
+        }
+    </script>
+</body>
+</html>
